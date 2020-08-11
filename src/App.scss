@@ -1,0 +1,29 @@
+// bootstrap styles
+@import "~bootstrap/scss/bootstrap";
+
+// fonts
+@import "./util/fonts.scss";
+
+// variables
+@import "./util/variables.scss";
+
+// page transition animations
+@import "./util/transitions.scss";
+
+// custom styles
+@import "./components/header/header.scss";
+@import "./components/home/home.scss";
+@import "./components/about/about.scss";
+@import "./components/skills/skills.scss";
+@import "./components/projects/projects.scss";
+@import "./components/contact/contact.scss";
+@import "./components/footer/footer.scss";
+
+// universal styles
+body {
+    font-family: $main-font;
+}
+
+.container {
+    max-width: 100vw;
+}

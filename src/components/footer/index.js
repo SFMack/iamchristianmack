@@ -1,12 +1,14 @@
 import React from "react";
 
+import Row from "react-bootstrap/Row";
+
 const Footer = () => {
   return (
-    <footer>
-      <div>
-        <p>Copyright 2020 | sfcamack@email.com</p>
-      </div>
-    </footer>
+    <Row>
+      <footer>
+        <p>Copyright 2020</p>
+      </footer>
+    </Row>
   );
 };
 
