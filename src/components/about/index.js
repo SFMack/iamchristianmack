@@ -1,6 +1,6 @@
 import React from "react";
 
-const Intro = () => {
+const About = () => {
   return (
     <div className="content">
       <p>
@@ -11,4 +11,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default About;

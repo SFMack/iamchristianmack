@@ -1,26 +1,25 @@
 import React from "react";
+import { BrowserRoute as Link, NavLink } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
 
-const NavBar = () => {
+const NavBar = (props) => {
+  const { routes } = props;
   return (
-    <nav className="navbar" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a className="navbar-item" href="https://google.com">
-          Christian Mack
-        </a>
-
-        <a
-          role="button"
-          className="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          href="1"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    </nav>
+    <Navbar bg="light">
+      <Nav className="mx-auto">
+        {routes.map((route) => (
+          <Nav.Link
+            key={route.path}
+            as={NavLink}
+            to={route.path}
+            activeClassName="active"
+            exact
+          >
+            {route.name}
+          </Nav.Link>
+        ))}
+      </Nav>
+    </Navbar>
   );
 };
 
