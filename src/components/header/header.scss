@@ -1,6 +1,18 @@
 @import '../../util/variables.scss';
 
 .header-logo {
-    font-family: $logo-font;
+    font-family: $logo-font !important;
     font-size: 3rem;
+    color: white !important
+}
+.header-container {
+    padding: 0;
+}
+
+.navbar {
+    margin: 4rem 0;
+}
+
+.nav-link.active {
+    color: rgba(255, 255, 255, 0.9) !important;
 }

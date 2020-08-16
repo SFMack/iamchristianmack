@@ -2,16 +2,14 @@ import React from "react";
 import { BrowserRoute as Link, NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 const Header = (props) => {
   const { routes } = props;
   return (
-    <>
-      <h3 className="header-logo">Christian Mack</h3>
-
-      <Navbar className="justify-content-end">
+    <Container className="header-container">
+      <Navbar className="justify-content-between p-0">
+        <Navbar.Brand className="header-logo">CM</Navbar.Brand>
         <Nav>
           {routes.map((route) => (
             <Nav.Link
@@ -26,7 +24,7 @@ const Header = (props) => {
           ))}
         </Nav>
       </Navbar>
-    </>
+    </Container>
   );
 };
 

@@ -4,9 +4,14 @@ const Home = () => {
   return (
     <div className="content">
       <h2>
-        Hi, my name is <strong>Christian Mack</strong>.
-        <br />I am Full Stack Software Developer based in{" "}
-        <bold>San Francisco Bay Area</bold>.
+        I am{" "}
+        <strong>
+          <span className="my-name">Christian Mack</span>
+        </strong>
+        <br />A Full Stack Software Developer
+        <br />
+        based in the
+        <bold> San Francisco Bay Area</bold>.
       </h2>
     </div>
   );

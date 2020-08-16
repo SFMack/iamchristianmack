@@ -4,13 +4,13 @@ import { Route } from "react-router-dom";
 
 import { CSSTransition } from "react-transition-group";
 
-import Row from "react-bootstrap/Row";
+import Container from "react-bootstrap/Container";
 
 import routes from "../../util/routes";
 
 const ContentBody = () => {
   return (
-    <Row className="content-body-row">
+    <Container className="content-body-container p-0">
       {routes.map(({ path, Component }) => (
         <Route key={path} exact path={path}>
           {({ match }) => (
@@ -27,7 +27,7 @@ const ContentBody = () => {
           )}
         </Route>
       ))}
-    </Row>
+    </Container>
   );
 };
 
