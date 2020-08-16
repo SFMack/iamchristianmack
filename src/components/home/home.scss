@@ -1,1 +1,6 @@
-// HOME
+@import '../../util/variables.scss';
+
+.my-name {
+    font-family: $logo-font;
+    font-size: 3rem;
+}
