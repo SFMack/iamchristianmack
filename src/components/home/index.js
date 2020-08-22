@@ -2,9 +2,11 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="content">
-      <h2>
-        I am{" "}
+    <div className="content home-content">
+      <h1>
+        I am
+        <br />
+        <br />
         <strong>
           <span className="my-name">Christian Mack</span>
         </strong>
@@ -12,7 +14,7 @@ const Home = () => {
         <br />
         based in the
         <bold> San Francisco Bay Area</bold>.
-      </h2>
+      </h1>
     </div>
   );
 };
