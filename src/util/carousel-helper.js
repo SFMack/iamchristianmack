@@ -1,30 +1,33 @@
+import marketingOgImg from "../images/marketingOgScreenshot.png";
+import chatApplicationImg from "../images/chatApplicationScreenshot.png";
+
 // passing an array of objects to projects component
 // to control carousel items dynamically
 const CarouselItems = [
   {
-    imageSrc: "https://via.placeholder.com/500x300",
-    projectName: "Project 1",
+    imageSrc: marketingOgImg,
+    projectName: "Marketing OG Revamp",
     projectDescription: "Here is my lengthy project description",
-    altText: "First slide",
-    githubLink: "https://www.google.com",
-    srcCodeLink: "https://www.github.com/SFMack",
+    altText: "Marketing OG Website Creation Exhibition",
+    source: "https://www.google.com",
+    live: "https://www.marketingog.com/",
   },
   {
-    imageSrc: "https://via.placeholder.com/300",
-    projectName: "Project 2",
+    imageSrc: chatApplicationImg,
+    projectName: "React Chat App with Socket.io",
     projectDescription: "Here is my lengthy project description",
     altText: "Second slide",
-    githubLink: "https://www.google.com",
-    srcCodeLink: "https://www.github.com/SFMack",
+    source: "https://www.google.com",
+    live: "https://hopeful-mccarthy-478463.netlify.app/",
   },
-  {
-    imageSrc: "https://via.placeholder.com/300",
-    projectName: "Project 3",
-    projectDescription: "Here is my lengthy project description",
-    altText: "Third slide",
-    githubLink: "https://www.google.com",
-    srcCodeLink: "https://www.github.com/SFMack",
-  },
+  // {
+  //   imageSrc: "https://via.placeholder.com/800x400",
+  //   projectName: "Project 3",
+  //   projectDescription: "Here is my lengthy project description",
+  //   altText: "Third slide",
+  //   githubLink: "https://www.google.com",
+  //   srcCodeLink: "https://www.github.com/SFMack",
+  // },
 ];
 
 export default CarouselItems;

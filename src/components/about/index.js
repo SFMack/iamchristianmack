@@ -1,5 +1,5 @@
 import React from "react";
-import cartoonHeadshot from "../../images/cartoon-headshot(b).png";
+import cartoonHeadshot from "../../images/cartoon-headshot.png";
 
 const About = () => {
   return (
