@@ -1,11 +1,22 @@
+
+
 .skills-content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 0 5rem;
+    padding: 0 2rem;
 
     i {
-        font-size: 10rem;
+        font-size: 6rem;
     }
+
+    @media (min-width: 400px) {
+        
+    }
+
+    @media (min-width: 800px) {
+        
+    }
+    
 }
