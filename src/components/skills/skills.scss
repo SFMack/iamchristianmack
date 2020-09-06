@@ -1,1 +1,23 @@
-// SKILLS
+.skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    height: 25rem;
+    margin-top: 20%;
+    padding: 1.5rem 2rem 0 2rem;
+
+    i {
+        font-size: 4.5rem;
+    }
+
+    @media (min-width: 400px) {
+        
+    }
+
+    @media (min-width: 800px) {
+        
+    }
+    
+}

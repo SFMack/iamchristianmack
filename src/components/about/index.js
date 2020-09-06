@@ -1,16 +1,19 @@
 import React from "react";
+import cartoonHeadshot from "../../images/cartoon-headshot.png";
 
 const About = () => {
   return (
-    <div className="content">
-      <h4>
+    <div className="about-content">
+      <div className="about--image-wrapper">
+        <img src={cartoonHeadshot} alt="cartoon headshot of christian mack" />
+      </div>
+
+      <p>
         I first began coding in high school where I got my feet wet with HTML
         and CSS. This past year I have gained experience working with teams to
         build full-stack projects utilizing React JS, Node JS, Express, and
-        more. After learning so much, I have the opportunity to give back to the
-        community that helped me and now I help students, as a Team Lead, to
-        learn and grow as developers.
-      </h4>
+        more.
+      </p>
     </div>
   );
 };
