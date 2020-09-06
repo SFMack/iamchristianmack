@@ -17,7 +17,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="content skills-content">
+    <div className="skills-content">
       {skillIcons.map((skill) => (
         <i class={skill.icon + " icon"}></i>
       ))}
