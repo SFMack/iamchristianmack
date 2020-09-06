@@ -8,7 +8,7 @@ import { faUserTie } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
-    <div className="content home-content">
+    <div className="home-content">
       <h2 className="home--name">Christian Mack</h2>
       <h3 className="home--message">
         Full Stack Developer from the San Francisco Bay Area

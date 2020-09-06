@@ -1,13 +1,29 @@
 .about-content {
     display: flex;
-    align-items: center;
-    height: 28rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding-top: 10%;
+    text-align: center;
 
-    img {
-        height: 100%;
+    .about--image-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
     }
 
-    h2 {
+    img {
+        height: 15rem;
+    }
+
+    p {
         margin: 0 3rem;
+    }
+
+    @media (min-width: 400px) {
+
+    }
+
+    @media (min-width: 800px) {
+        
     }
 }
