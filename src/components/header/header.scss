@@ -1,19 +1,29 @@
 @import '../../util/variables.scss';
 
-.nav-link.active {
-    color: rgba(255, 255, 255, 0.9) !important;
-}
 
 .header-container {
     padding: 0;
     margin: 1rem 0;
     height: 100%;
 
+    .nav-link {
+        color: $faded-dark-blue;
+        font-size: .8rem;
+    }
+
+    .nav-link.active {
+        color: rgba(255, 255, 255, 0.9) !important;
+    }    
+
     .header-logo {
         font-family: $logo-font !important;
         font-size: 3rem;
         color: white !important;
         display: none;
+    }
+
+    .navbar {
+        justify-content: center;
     }
 
     @media (min-width: 400px) {

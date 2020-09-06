@@ -1,15 +1,27 @@
 @import '../../util/variables.scss';
 
 .home-content {
-    margin-top: 25%;
+    padding-top: 30%;
 
-    .my-name {
+    .home--name {
         font-family: $logo-font;
-        font-size: 4rem;
+        font-size: 3.5rem;
+        margin: 0;
     }
 
     h1 {
         font-size: 2rem;
+    }
+
+    .icon-label {
+        display: none;
+    }
+
+    .home--icon-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding-top: 7%;
     }
 
     @media (min-width: 400px) {
@@ -17,7 +29,7 @@
     }
 
     @media (min-width: 800px) {
-        .my-name {
+        .home--name {
             font-size: 8rem;
         }
 

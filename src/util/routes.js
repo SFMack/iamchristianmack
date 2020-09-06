@@ -7,11 +7,11 @@ import Contact from "../components/contact";
 
 // `routes` object passed to NavBar component
 const routes = [
-  { path: "/", name: "Home", Component: Home },
-  { path: "/about", name: "About", Component: About },
-  { path: "/skills", name: "Skills", Component: Skills },
-  { path: "/projects", name: "Projects", Component: Projects },
-  { path: "/contact", name: "Contact", Component: Contact },
+  { path: "/", name: "HOME", Component: Home },
+  { path: "/about", name: "ABOUT", Component: About },
+  { path: "/skills", name: "SKILLS", Component: Skills },
+  { path: "/projects", name: "PROJECTS", Component: Projects },
+  { path: "/contact", name: "CONTACT", Component: Contact },
 ];
 
 export default routes;
