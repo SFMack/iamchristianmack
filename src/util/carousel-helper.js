@@ -14,7 +14,7 @@ const CarouselItems = [
   },
   {
     imageSrc: chatApplicationImg,
-    projectName: "React Chat App with Socket.io",
+    projectName: "React Chat App",
     projectDescription: "Here is my lengthy project description",
     altText: "Second slide",
     source: "https://www.google.com",

@@ -1,58 +1,103 @@
 @import "../../util/variables.scss";
 
-// carousel
-.carousel {
-    height: 30rem;
-}
+$carousel-height: 15rem;
 
-.carousel-caption {
-    display: flex;
-    justify-content: space-between;
-    margin: .5rem;
-}
+.project-content {
 
-.carousel-indicators {
-    display: none;
-}
+    // carousel
+    .carousel {
+        height: $carousel-height;
+        margin-top: 3rem;
+    }
 
-// carousel-items
-.project-info-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.25rem 10.7rem 0 10.7rem;
-}
+    .carousel-caption {
+        display: flex;
+        justify-content: space-between;
+        margin: .5rem;
+    }
 
-.project-info-description {
-    margin: .25rem 10.7rem 0 10.7rem;
-}
+    .carousel-indicators {
+        display: none;
+    }
 
-// buttons
-.project-action-buttons {
-    margin-top: 3px;
+    // carousel-items
+    .carousel-image-wrapper {
+        height: $carousel-height;
 
-    .btn,
-    .btn:visited {
-        text-decoration: none;
-        background-color: $projectBtn;
-        color: $faded-blue;
-        border: none;
+        img {
+            height: $carousel-height;
+        }
+    }
+
+    .item--project-info {
+        padding: .75rem;
+
+        .project-info-header {
+            display: flex;
+            flex-direction: column;
+            margin-top: .5rem;
+            margin-bottom: auto;
+            font-size: 1.5rem !important;
+        }
     
-        &:hover,
-        &:focus {
-            background-color: $projectBtn-hover;
-            color: $light-blue
+        .project-info-description {
+            margin: .25rem;
+    
+            p {
+                margin-top:.5rem;
+            }
+        }
+    
+        // carousel buttons
+        .project-action-buttons {
+            display: flex;
+        
+    
+            .btn,
+            .btn:visited {
+                text-decoration: none;
+                background-color: $projectBtn;
+                color: $faded-blue;
+                border: none;
+            
+                &:hover,
+                &:focus {
+                    background-color: $projectBtn-hover;
+                    color: $light-blue
+                }
+            }
+    
+            a {
+                font-size: 1rem;
+                color: $faded-white;
+                text-decoration: none;
+                margin-right: 1rem;
+    
+                &:hover {
+                    color: $white;
+                }
+            }
         }
     }
 
-    a {
-        margin-left: 1.25rem;
-        font-size: 1.2rem;
-        color: $faded-white;
-        text-decoration: none;
+    
 
-        &:hover {
-            color: $white;
+    @media (min-width: 400px) {
+
+    }
+
+    @media (min-width: 800px) {
+        .project-info-header {
+            margin: 1.25rem 10.7rem 0 10.7rem;
+            flex-direction: row;
+        }
+
+        .project-info-description {
+            margin: .25rem 10.7rem 0 10.7rem;
         }
     }
+
 }
+
+
 
