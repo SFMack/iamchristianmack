@@ -88,51 +88,72 @@
   .skills-content i {
     font-size: 4.5rem; }
 
-.carousel {
-  height: 30rem; }
+.project-content .carousel {
+  height: 15rem;
+  margin-top: 3rem; }
 
-.carousel-caption {
+.project-content .carousel-caption {
   display: flex;
   justify-content: space-between;
   margin: .5rem; }
 
-.carousel-indicators {
+.project-content .carousel-indicators {
   display: none; }
 
-.project-info-header {
-  display: flex;
-  justify-content: space-between;
-  margin: 1.25rem 10.7rem 0 10.7rem; }
+.project-content .carousel-image-wrapper {
+  height: 15rem; }
+  .project-content .carousel-image-wrapper img {
+    height: 15rem; }
 
-.project-info-description {
-  margin: .25rem 10.7rem 0 10.7rem; }
+.project-content .item--project-info {
+  padding: .75rem; }
+  .project-content .item--project-info .project-info-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: .5rem;
+    margin-bottom: auto;
+    font-size: 1.5rem !important; }
+  .project-content .item--project-info .project-info-description {
+    margin: .25rem; }
+    .project-content .item--project-info .project-info-description p {
+      margin-top: .5rem; }
+  .project-content .item--project-info .project-action-buttons {
+    display: flex; }
+    .project-content .item--project-info .project-action-buttons .btn,
+    .project-content .item--project-info .project-action-buttons .btn:visited {
+      text-decoration: none;
+      background-color: rgba(245, 245, 245, 0.5);
+      color: rgba(0, 147, 233, 0.5);
+      border: none; }
+      .project-content .item--project-info .project-action-buttons .btn:hover, .project-content .item--project-info .project-action-buttons .btn:focus,
+      .project-content .item--project-info .project-action-buttons .btn:visited:hover,
+      .project-content .item--project-info .project-action-buttons .btn:visited:focus {
+        background-color: rgba(245, 245, 245, 0.7);
+        color: #0093E9; }
+    .project-content .item--project-info .project-action-buttons a {
+      font-size: 1rem;
+      color: rgba(245, 245, 245, 0.7);
+      text-decoration: none;
+      margin-right: 1rem; }
+      .project-content .item--project-info .project-action-buttons a:hover {
+        color: whitesmoke; }
 
-.project-action-buttons {
-  margin-top: 3px; }
-  .project-action-buttons .btn,
-  .project-action-buttons .btn:visited {
-    text-decoration: none;
-    background-color: rgba(245, 245, 245, 0.5);
-    color: rgba(0, 147, 233, 0.5);
-    border: none; }
-    .project-action-buttons .btn:hover, .project-action-buttons .btn:focus,
-    .project-action-buttons .btn:visited:hover,
-    .project-action-buttons .btn:visited:focus {
-      background-color: rgba(245, 245, 245, 0.7);
-      color: #0093E9; }
-  .project-action-buttons a {
-    margin-left: 1.25rem;
-    font-size: 1.2rem;
-    color: rgba(245, 245, 245, 0.7);
-    text-decoration: none; }
-    .project-action-buttons a:hover {
-      color: whitesmoke; }
+@media (min-width: 800px) {
+  .project-content .project-info-header {
+    margin: 1.25rem 10.7rem 0 10.7rem;
+    flex-direction: row; }
+  .project-content .project-info-description {
+    margin: .25rem 10.7rem 0 10.7rem; } }
 
 .contact-content {
   padding: 6rem 1rem 0 1rem; }
-  .contact-content .form--top-row {
+  .contact-content .contact--form {
     display: flex;
+    justify-content: flex-end;
     flex-direction: column; }
+    .contact-content .contact--form .form--top-row {
+      display: flex;
+      flex-direction: column; }
 
 .footer-container {
   position: absolute;

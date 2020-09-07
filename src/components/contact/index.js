@@ -46,8 +46,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="content contact-content">
-      <Form onSubmit={submitForm}>
+    <div className="contact-content">
+      <Form onSubmit={submitForm} className="contact--form">
         <Row className="form--top-row">
           <Col>
             <Form.Group controlId="form-name">

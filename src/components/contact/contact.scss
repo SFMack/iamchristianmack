@@ -2,8 +2,15 @@
 .contact-content {
     padding: 6rem 1rem 0 1rem;
 
-    .form--top-row {
+    .contact--form {
         display: flex;
+        justify-content: flex-end;
         flex-direction: column;
+
+        .form--top-row {
+            display: flex;
+            flex-direction: column;
+        }
     }
+    
 }

@@ -6,15 +6,13 @@ import CarouselItems from "../../util/carousel-helper";
 
 const Projects = () => {
   return (
-    <div className="content">
+    <div className="project-content">
       <Carousel>
         {CarouselItems.map((item) => (
           <Carousel.Item>
-            <img
-              className="d-block m-auto"
-              src={item.imageSrc}
-              alt={item.altText}
-            />
+            <div className="carousel-image-wrapper">
+              <img className="m-auto" src={item.imageSrc} alt={item.altText} />
+            </div>
             {/* <Carousel.Caption>HTML, CSS, Javascript</Carousel.Caption> */}
             <div className="item--project-info">
               <div className="project-info-header">
@@ -29,11 +27,7 @@ const Projects = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Blandit volutpat maecenas volutpat blandit aliquam etiam erat
-                  velit. Lorem ipsum dolor sit amet consectetur adipiscing elit
-                  ut aliquam. Diam quis enim lobortis scelerisque. Feugiat in
-                  ante metus dictum at tempor commodo ullamcorper. Scelerisque
-                  viverra mauris in aliquam. Dignissim sodales ut eu sem integer
-                  vitae justo.
+                  velit.
                 </p>
               </div>
             </div>
