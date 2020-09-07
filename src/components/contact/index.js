@@ -47,6 +47,9 @@ const Contact = () => {
 
   return (
     <div className="contact-content">
+      <h3 className="contact--header-cta">
+        Send me a message and I'll get back to you as soon as possible.
+      </h3>
       <Form onSubmit={submitForm} className="contact--form">
         <Row className="form--top-row">
           <Col>

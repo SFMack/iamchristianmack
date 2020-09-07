@@ -146,11 +146,16 @@
     margin: .25rem 10.7rem 0 10.7rem; } }
 
 .contact-content {
-  padding: 6rem 1rem 0 1rem; }
+  padding: 4rem 1rem 0 1rem; }
+  .contact-content .contact--header-cta {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
   .contact-content .contact--form {
     display: flex;
     justify-content: flex-end;
     flex-direction: column; }
+    .contact-content .contact--form label {
+      font-size: .9rem; }
     .contact-content .contact--form .form--top-row {
       display: flex;
       flex-direction: column; }
