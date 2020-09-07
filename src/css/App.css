@@ -129,7 +129,10 @@
       color: whitesmoke; }
 
 .contact-content {
-  padding: 6rem 5rem; }
+  padding: 6rem 1rem 0 1rem; }
+  .contact-content .form--top-row {
+    display: flex;
+    flex-direction: column; }
 
 .footer-container {
   position: absolute;
