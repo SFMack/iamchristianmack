@@ -11,13 +11,22 @@
     i {
         font-size: 4.5rem;
     }
+}
 
-    @media (min-width: 400px) {
-        
-    }
+@media (min-width: 750px) {
+    .skills-content {
+        margin-top: 10%;
+        padding: 1.5rem 6rem 0 6rem;
 
-    @media (min-width: 800px) {
-        
+        i {
+            font-size: 10rem;
+        }
     }
-    
+}
+
+@media (min-width: 1000px) {
+    .skills-content {
+        padding: 1.5rem 10rem 0 10rem;
+        margin-top: 1%;
+    }
 }
