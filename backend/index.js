@@ -35,7 +35,7 @@ APP.post("/api/send", (req, res) => {
     secure: true,
     auth: {
       type: "OAuth2",
-      user: process.env.email,
+      user: process.env.user,
       pass: process.env.pass,
       clientId: process.env.clientId,
       clientSecret: process.env.clientSecret,
