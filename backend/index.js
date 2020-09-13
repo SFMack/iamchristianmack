@@ -29,14 +29,6 @@ APP.post("/api/send", (req, res) => {
   const data = req.body;
   console.log(data);
 
-  // const transporter = nodemailer.createTransport({
-  //   service: "gmail",
-  //   auth: {
-  //     user: process.env.email,
-  //     pass: process.env.pass,
-  //   },
-  // });
-
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -53,7 +45,7 @@ APP.post("/api/send", (req, res) => {
   });
 
   const mailOptions = {
-    from: data.email,
+    from: "new@gmail.com",
     to: "christian.ak.mack@gmail.com",
     subject: `New message from: ${data.email}`,
     html: `<p>${data.name}</p><p>${data.email}</p><p>${data.message}</p>`,
