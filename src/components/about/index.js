@@ -5,7 +5,11 @@ const About = () => {
   return (
     <div className="about-content">
       <div className="about--image-wrapper">
-        <img src={cartoonHeadshot} alt="cartoon headshot of christian mack" />
+        <img
+          src={cartoonHeadshot}
+          alt="cartoon headshot of christian mack"
+          id="about-headshot"
+        />
       </div>
 
       <p>

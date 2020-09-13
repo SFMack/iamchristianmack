@@ -14,19 +14,22 @@ const Home = () => {
         Full Stack Developer from the San Francisco Bay Area
       </h3>
       <div className="home--icon-wrapper">
-        <a href="https://www.linkedin.com/in/chrismackca/">
+        <a
+          href="https://www.linkedin.com/in/chrismackca/"
+          className="icon-link"
+        >
           <FontAwesomeIcon icon={faLinkedin} size="3x" />
-          <span className="icon-label">chrismackca</span>
+          <span className="icon-label">LinkedIn</span>
         </a>
-        <a href="https://github.com/SFMack">
+        <a href="https://github.com/SFMack" className="icon-link">
           <FontAwesomeIcon icon={faGithub} size="3x" />
-          <span className="icon-label">SFMack</span>
+          <span className="icon-label">GitHub</span>
         </a>
-        <a href="malito:sfcamack@icoud.com">
+        <a href="malito:sfcamack@icoud.com" className="icon-link">
           <FontAwesomeIcon icon={faEnvelope} size="3x" />
-          <span className="icon-label">sfcamack@icloud.com</span>
+          <span className="icon-label">Email</span>
         </a>
-        <a href="https://www.google.com">
+        <a href="https://www.google.com" className="icon-link">
           <FontAwesomeIcon icon={faUserTie} size="3x" />
           <span className="icon-label">Resume</span>
         </a>

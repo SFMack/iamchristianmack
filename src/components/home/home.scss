@@ -10,32 +10,47 @@
         margin: 0;
     }
 
-    h1 {
-        font-size: 2rem;
-    }
-
-    .icon-label {
-        display: none;
-    }
+    
 
     .home--icon-wrapper {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         padding-top: 7%;
-    }
+        
+        .icon-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-    @media (min-width: 400px) {
-
-    }
-
-    @media (min-width: 800px) {
-        .home--name {
-            font-size: 8rem;
+            .icon-label {
+                font-size: .8rem;
+            }
         }
 
+    }
+}
+
+@media (min-width: 750px) {
+    .home-content {
+        padding: 15%;
+
+        .home--name {
+            font-size: 7rem;
+        }
+    
         h1 {
             font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .home-content {
+        padding-top: 7%;
+
+        .home--name {
+            font-size: 9rem;
         }
     }
 }

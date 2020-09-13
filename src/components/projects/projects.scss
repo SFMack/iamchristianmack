@@ -1,6 +1,7 @@
 @import "../../util/variables.scss";
 
-$carousel-height: 15rem;
+$carousel-height: 25rem;
+$carousel-height-large: 30rem; 
 
 .project-content {
 
@@ -79,25 +80,42 @@ $carousel-height: 15rem;
             }
         }
     }
-
-    
-
-    @media (min-width: 400px) {
-
-    }
-
-    @media (min-width: 800px) {
-        .project-info-header {
-            margin: 1.25rem 10.7rem 0 10.7rem;
-            flex-direction: row;
-        }
-
-        .project-info-description {
-            margin: .25rem 10.7rem 0 10.7rem;
-        }
-    }
-
 }
 
+@media (min-width: 750px) {
+    .project-info-header {
+        margin: 1.25rem 10.7rem 0 10.7rem;
+        flex-direction: row;
+    }
+
+    .project-info-description {
+        margin: .25rem 10.7rem 0 10.7rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .project-content {
+        .carousel {
+            height: $carousel-height-large;
+            margin-top: 0;
+        }
+
+        .carousel-image-wrapper {
+            height: $carousel-height-large;
+
+            img {
+                height: $carousel-height-large;
+            }
+        }
+    }
+
+    .item--project-info {
+
+        .project-info-header {
+            margin: 0;
+            flex-direction: column;
+        }
+    }
+}
 
 
