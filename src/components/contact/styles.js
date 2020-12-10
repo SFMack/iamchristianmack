@@ -1,11 +1,18 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 export default makeStyles((theme) => ({
-  grid: {
-    width: "100%",
+  contactContainer: {
+    height: "30rem",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "space-between",
   },
-  gridItem: {
-    width: "100%",
+  headingTextWrapper: {
+    width: "50%",
   },
-  textField: {},
+  headingText: {
+    color: "green",
+  },
 }));
