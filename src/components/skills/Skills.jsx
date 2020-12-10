@@ -1,6 +1,12 @@
 import React from "react";
 
+import Grid from "@material-ui/core/Grid";
+
+import useStyles from "./styles";
+
 const Skills = () => {
+  const classes = useStyles();
+
   const skillIcons = [
     { label: "JavaScript", icon: "devicon-javascript-plain colored" },
     { label: "Python", icon: "devicon-python-plain colored" },
@@ -17,10 +23,14 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills-content">
-      {skillIcons.map((skill) => (
-        <i class={skill.icon + " icon"}></i>
-      ))}
+    <div className={classes.skillsDiv}>
+      <Grid container spacing={2} justify="center">
+        {skillIcons.map((skill) => (
+          <Grid item key={skill.label}>
+            <i className={skill.icon + " " + classes.icon}></i>
+          </Grid>
+        ))}
+      </Grid>
     </div>
   );
 };
