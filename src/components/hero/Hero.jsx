@@ -25,7 +25,7 @@ const Hero = () => {
               gutterBottom
             >
               Hello! <br />
-              Welcome to my portfolio.
+              My name is Christian Mack.
             </Typography>
             <Typography
               variant="h4"
@@ -33,9 +33,9 @@ const Hero = () => {
               color="textSecondary"
               paragraph
             >
-              I'm Christan Mack, <br /> a Full Stack Developer
+              I'm a Full Stack Developer specializing in Frontend.
               <br />
-              specializing in Frontend
+              Welcome to my portfolio!
             </Typography>
             <Resume />
           </Grid>
