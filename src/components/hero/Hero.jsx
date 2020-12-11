@@ -2,6 +2,7 @@ import React from "react";
 
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 
 import Skills from "../skills/Skills";
 import Resume from "../resume/Resume";
@@ -14,8 +15,8 @@ const Hero = () => {
   return (
     <div className={classes.heroContent}>
       <Container maxWidth="md">
-        <div className={classes.changeFlexDirectionWrapper}>
-          <div className={classes.heroIntroText}>
+        <Grid>
+          <Grid item>
             <Typography
               component="h3"
               variant="h3"
@@ -36,10 +37,12 @@ const Hero = () => {
               <br />
               specializing in Frontend
             </Typography>
-          </div>
-          <Skills />
-        </div>
-        <Resume />
+            <Resume />
+          </Grid>
+          <Grid item xs={12}>
+            <Skills />
+          </Grid>
+        </Grid>
       </Container>
     </div>
   );

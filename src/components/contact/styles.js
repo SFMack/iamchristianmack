@@ -8,6 +8,9 @@ export default makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     alignContent: "space-between",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
   },
   headingTextWrapper: {
     width: "50%",

@@ -7,6 +7,11 @@ export default makeStyles((theme) => ({
   heroContent: {
     padding: "8rem 0",
   },
+  heroGrid: {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
   resumeButton: {
     backgroundColor: "black",
     color: "white",

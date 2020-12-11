@@ -4,9 +4,9 @@ export default makeStyles((theme) => ({
   skillsDiv: {
     display: "flex",
     flexFlow: "row wrap",
-    width: "60%",
+    marginTop: "8rem",
   },
   icon: {
-    fontSize: "6rem",
+    fontSize: "8rem",
   },
 }));

@@ -35,14 +35,17 @@ const ContactForm = () => {
       buttonText,
     };
 
+    // https://cmack-portfolio.herokuapp.com/api/send
+
     axios
-      .post("https://cmack-portfolio.herokuapp.com/api/send", data)
+      .post("https://localhost:8000/api/send", data)
       .then((res) => {
         res.status(200).json({ message: "Success!" });
         setButtonText("Success!");
         resetForm();
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log(error);
         setButtonText("Message not sent");
       });
   };
