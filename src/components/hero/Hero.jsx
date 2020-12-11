@@ -2,6 +2,7 @@ import React from "react";
 
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 
 import Skills from "../skills/Skills";
 import Resume from "../resume/Resume";
@@ -14,8 +15,8 @@ const Hero = () => {
   return (
     <div className={classes.heroContent}>
       <Container maxWidth="md">
-        <div className={classes.changeFlexDirectionWrapper}>
-          <div className={classes.heroIntroText}>
+        <Grid>
+          <Grid item>
             <Typography
               component="h3"
               variant="h3"
@@ -24,7 +25,7 @@ const Hero = () => {
               gutterBottom
             >
               Hello! <br />
-              Welcome to my portfolio.
+              My name is Christian Mack.
             </Typography>
             <Typography
               variant="h4"
@@ -32,14 +33,16 @@ const Hero = () => {
               color="textSecondary"
               paragraph
             >
-              I'm Christan Mack, <br /> a Full Stack Developer
+              I'm a Full Stack Developer specializing in Frontend.
               <br />
-              specializing in Frontend
+              Welcome to my portfolio!
             </Typography>
-          </div>
-          <Skills />
-        </div>
-        <Resume />
+            <Resume />
+          </Grid>
+          <Grid item xs={12}>
+            <Skills />
+          </Grid>
+        </Grid>
       </Container>
     </div>
   );

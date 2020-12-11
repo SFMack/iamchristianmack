@@ -5,9 +5,9 @@ export default makeStyles((theme) => ({
     margin: "1rem 0",
   },
   textField: {
-    width: "25rem",
+    width: "100%",
   },
   sendButton: {
-    width: "25rem",
+    width: "100%",
   },
 }));
