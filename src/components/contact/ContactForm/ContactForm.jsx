@@ -36,7 +36,7 @@ const ContactForm = () => {
     };
 
     axios
-      .post("https://cmack-portfolio.herokuapp.com/api/send", data)
+      .post("/api/send", data)
       .then((res) => {
         setButtonText("Success!");
         res.status(200).json({ message: "Success!" });
