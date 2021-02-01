@@ -38,7 +38,10 @@ const ContactForm = () => {
     // http://localhost:8000/api/send
 
     axios
-      .post("https://cmack-portfolio.herokuapp.com/api/send", data)
+      .post(
+        "https://cors-anywhere.herokuapp.com/https://cmack-portfolio.herokuapp.com/api/send",
+        data
+      )
       .then((res) => {
         setButtonText("Success!");
         res.status(200).json({ message: "Success!" });
