@@ -1,105 +1,88 @@
 import React, { useState } from "react";
-import axios from "axios";
 
+import emailjs from "emailjs-com";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
 
 import useStyles from "./styles";
-import { TextField } from "@material-ui/core";
+
+import userID from "./userID";
 
 const ContactForm = () => {
   const classes = useStyles();
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [sent, setSent] = useState("");
   const [buttonText, setButtonText] = useState("Send Message");
 
-  const resetForm = (e) => {
-    setName("");
-    setEmail("");
-    setMessage("");
-    setSent("");
-    buttonText("Send Message");
+  const changeButtonText = () => {
+    setButtonText("Message Sent");
+    setTimeout(() => {
+      setButtonText("Send Message");
+    }, 5000);
   };
 
   const submitForm = (e) => {
     e.preventDefault();
 
-    let data = {
-      name,
-      email,
-      message,
-      sent,
-      buttonText,
-    };
-
-    axios
-      .post("https://cmack-portfolio.herokuapp.com/api/send", data)
-      .then((res) => {
-        setButtonText("Success!");
-        res.status(200).json({ message: "Success!" });
-        resetForm();
-      })
-      .catch((error) => {
-        console.log(error);
-        setButtonText("Message not sent");
-      });
+    emailjs
+      .sendForm(
+        "gmail_contact_service",
+        "portfolio_contact_form",
+        e.target,
+        process.env.NODE_ENV === "production"
+          ? process.env.EMAILJS_ID
+          : userID()
+      )
+      .then(
+        (result) => {
+          changeButtonText();
+        },
+        (error) => {
+          console.log(error.text);
+          setButtonText("Message not sent");
+        }
+      );
   };
 
   return (
     <div className={classes.contactFormWrapper}>
-      <form
-        className={classes.form}
-        noValidate
-        autoComplete="off"
-        onSubmit={submitForm}
-      >
-        <Grid className={classes.grid}>
+      <Grid className={classes.grid}>
+        <form
+          className={classes.form}
+          noValidate
+          autoComplete="off"
+          onSubmit={submitForm}
+        >
           <Grid item className={classes.gridItem}>
-            <TextField
-              id="nameInput"
-              label="Name"
-              variant="outlined"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+            <input
               className={classes.textField}
+              type="text"
+              name="from_name"
+              placeholder="Name"
             />
           </Grid>
           <Grid item className={classes.gridItem}>
-            <TextField
-              id="emailInput"
-              label="Email"
-              variant="outlined"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+            <input
               className={classes.textField}
+              type="text"
+              name="reply_to"
+              placeholder="Email"
             />
           </Grid>
           <Grid item className={classes.gridItem}>
-            <TextField
-              id="messageInput"
-              label="Message"
-              multiline
-              rows={4}
-              variant="outlined"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+            <textarea
               className={classes.textField}
+              name="message"
+              placeholder="Enter your message"
             />
           </Grid>
           <Grid item className={classes.gridItem}>
-            <Button
+            <input
+              className={classes.textField}
               type="submit"
-              onClick={submitForm}
-              className={classes.sendButton}
-            >
-              {buttonText}
-            </Button>
+              value={buttonText}
+            />
           </Grid>
-        </Grid>
-      </form>
+        </form>
+      </Grid>
     </div>
   );
 };
