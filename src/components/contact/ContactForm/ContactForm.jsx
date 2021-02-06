@@ -5,10 +5,10 @@ import Grid from "@material-ui/core/Grid";
 
 import useStyles from "./styles";
 
-import userID from "./userID";
-
 const ContactForm = () => {
   const classes = useStyles();
+
+  const EMAILJS_ID = process.env.REACT_APP_EMAILJS_ID;
 
   const [buttonText, setButtonText] = useState("Send Message");
 
@@ -27,9 +27,7 @@ const ContactForm = () => {
         "gmail_contact_service",
         "portfolio_contact_form",
         e.target,
-        process.env.NODE_ENV === "production"
-          ? process.env.EMAILJS_ID
-          : userID()
+        EMAILJS_ID
       )
       .then(
         (result) => {
