@@ -5,7 +5,10 @@ export default makeStyles((theme) => ({
     margin: "1rem 0",
   },
   textField: {
-    width: "100%",
+    width: "20rem",
+    padding: "1rem",
+    border: ".5px solid grey",
+    borderRadius: "10px",
   },
   sendButton: {
     width: "100%",
