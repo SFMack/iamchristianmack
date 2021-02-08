@@ -12,7 +12,8 @@ export default makeStyles((theme) => ({
       textDecoration: "none",
     },
   },
-  navButtons: {
-    paddingLeft: "80%",
+  toolBar: {
+    display: "flex",
+    justifyContent: "space-between",
   },
 }));

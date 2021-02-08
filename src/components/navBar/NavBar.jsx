@@ -20,15 +20,17 @@ const NavBar = () => {
 
   return (
     <AppBar position="relative" className={classes.navBar}>
-      <Toolbar>
-        <Button href={socialLinks[0]}>
-          <LinkedInIcon className={classes.icon} />
-        </Button>
+      <Toolbar className={classes.toolBar}>
+        <div className={classes.navButtonsLeft}>
+          <Button href={socialLinks[0]}>
+            <LinkedInIcon className={classes.icon} />
+          </Button>
 
-        <Button href={socialLinks[1]}>
-          <GitHubIcon className={classes.icon} />
-        </Button>
-        <div className={classes.navButtons}>
+          <Button href={socialLinks[1]}>
+            <GitHubIcon className={classes.icon} />
+          </Button>
+        </div>
+        <div className={classes.navButtonsRight}>
           <Link to="/" className={classes.navLink}>
             <Button>Home</Button>
           </Link>
