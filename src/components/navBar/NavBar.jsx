@@ -1,4 +1,7 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
+
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
@@ -25,6 +28,14 @@ const NavBar = () => {
         <Button href={socialLinks[1]}>
           <GitHubIcon className={classes.icon} />
         </Button>
+        <div className={classes.navButtons}>
+          <Link to="/" className={classes.navLink}>
+            <Button>Home</Button>
+          </Link>
+          <Link to="/blog" className={classes.navLink}>
+            <Button>Blog</Button>
+          </Link>
+        </div>
       </Toolbar>
     </AppBar>
   );

@@ -5,5 +5,14 @@ export default makeStyles((theme) => ({
     backgroundColor: "white",
     color: "black",
     boxShadow: "none",
+    width: "100%",
+  },
+  navLinks: {
+    "&:hover": {
+      textDecoration: "none",
+    },
+  },
+  navButtons: {
+    paddingLeft: "80%",
   },
 }));
